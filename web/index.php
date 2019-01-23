@@ -2,6 +2,8 @@
     $majors = array("CS"=>"Computer Science", "WDD"=>"Web Design and Development",
                     "CIT"=>"Computer Information Technology", "CE"=>"Computer Engineering");
 
+    echo "PHP File";
+
 ?>
 
 <!DOCTYPE html>
