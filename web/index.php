@@ -30,6 +30,7 @@
     <input type="checkbox" name="Continents[]" value="SA"> South America <br>
     <input type="checkbox" name="Continents[]" value="EU"> Europe <br>
     <input type="checkbox" name="Continents[]" value="AS"> Asia <br>
+    <input type="checkbox" name="Continents[]" value="AF"> Africa <br>
     <input type="checkbox" name="Continents[]" value="AU"> Australia <br>
     <input type="checkbox" name="Continents[]" value="AN"> Antarctica <br>
     <textarea rows="4" cols="50" name="Comments">Comments</textarea> <br>
