@@ -1,0 +1,229 @@
+
+/*Normalize*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    background-image: url(media/bg-wood-3.jpg);
+    background-size: cover;
+    height: 100%;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0 2px 0;
+    background-color: #002200;
+}
+header > div {
+    flex-grow: 1;
+    text-align: center;
+}
+h1 {
+    word-wrap: break-word;
+}
+h2 {
+    text-align: center;
+}
+#header-logo {
+    text-align: left;
+    margin-left: 5px;
+}
+#header-title {
+    width: 90%;
+    color: white;
+    font-family: "Bookman Old Style";
+    font-size: x-large;
+}
+.cartInfo > p {
+    font-family: Georgia;
+    text-align: left;
+    padding-bottom: 3px;
+}
+.link-rightSide {
+    color: #60b0f4;
+    min-width: 120px;
+    text-align: right;
+    margin-right: 15px;
+}
+.link-rightSide > p {
+    font-family: Centaur ;
+    color: #60b0f4;
+    text-decoration: none;
+    padding: 0 5px;
+}
+.link-rightSide > a:hover {
+    color: white;
+}
+.flexRow {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+form {
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 black;
+    margin: 30px 10%;
+    padding: 20px 0;
+    background-image: linear-gradient(to top, rgba(128, 128, 128, .7),
+    rgba(128, 128, 128, .6));
+}
+form > div > input, form > div > p{
+    border-radius: 5px;
+    min-width: 180px;
+    margin: 15px;
+    padding: 10px;
+    border: solid grey 1px;
+}
+form > div > p {
+    background-color: white;
+    font-weight: bold;
+}
+form > input {
+    border-radius: 5px;
+    min-width: 180px;
+    margin: 15px;
+    padding: 10px;
+    border: solid grey 1px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 4%;
+    justify-content: space-evenly;
+}
+.evenFlex {
+    flex-grow: 1;
+    margin: 15px 1%;
+    max-width: 300px;
+    min-width: 254px;
+}
+.post-container {
+    height: 455px;
+    flex-grow: 1;
+    text-align: center;
+    margin: 15px 1vw;
+    border: solid 2px black;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 black;
+    background-image: linear-gradient(to top, rgba(128, 128, 128, .7),
+                                              rgba(128, 128, 128, .6));
+}
+.post-container > h2 {
+    text-transform: uppercase;
+    font-family: "francois one";
+    font-size: x-large;
+}
+.post-container > p {
+    text-align: left;
+    font-size: larger;
+    font-family: "francois one";
+    margin: 10px auto;
+    width: 250px;
+}
+.post-container > img {
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.price {
+    margin-bottom: 10px;
+    font-weight: bolder;
+    color: #002200;
+}
+.purchaseButton {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: Georgia;
+    color: #002200;
+    background-color: #60b0f4;
+    box-shadow: 0 3px 6px 0 black;
+}
+.purchaseButton:hover {
+    box-shadow: none;
+}
+#orderReview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:  60%;
+    text-align: center;
+    margin: 25px auto;
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 black;
+    background-image: linear-gradient(to top, rgba(128, 128, 128, .7),
+    rgba(128, 128, 128, .6));
+}
+#items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
+    align-content: start;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+#orderInfo {
+    margin-top: 10px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    padding: 5px 0 2px 0;
+    background-color: #002200;
+}
+footer > div {
+    flex-grow: 1;
+    text-align: center;
+}
+#footer-socialMedia {
+    text-align: left;
+    margin-left: 5px;
+}
+#footer-socialMedia > img {
+    height: 5vw;
+    max-height: 35px;
+}
+@media only screen and (max-width: 905px) {
+    .evenFlex {
+        display: inline;
+    }
+    form {
+        margin: 30px 1%;
+    }
+    .flex-container {
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 1230px) {
+    .evenFlex {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1570px) {
+    .post-container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .flex-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
