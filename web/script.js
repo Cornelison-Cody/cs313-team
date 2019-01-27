@@ -10,6 +10,19 @@ var addToCart = function (price, item) {
     formPrice.innerHTML = ((Number(cartPrice.innerHTML)*1.08) + 10).toFixed(2);
     itemsTotal.value = cartPrice.innerHTML;
     cartQuantity.innerHTML++;
+
+};
+
+var removeFromCart = function (item) {
+    var items = document.getElementById("itemNumbers");
+    items.value.toString().replace(item, '');
+};
+
+var showItems = function (itemString) {
+    var items = document.getElementById("items");
+    for (var i = 0; i < itemString.length; i++) {
+        items.children[itemString.charAt(i)].style.display = "flex";
+    }
 };
 
 var validatePhone = function (element) {
